@@ -26,11 +26,15 @@ Spec: The program returns a range of numbers from 0 to the users inputted number
 Input: "4"
 Output: "0, 1, 2, 3, 4"
 
+Spec: program can recognize indivdial numbers in a lager number input
+Input: 123
+Output: "1","2","3"
+
 Spec: The program returns numbers that start with 3 from list
 Input: "4"
 Output: "3"
 
-Spec: The program replaces a 3 with "Won't you be my neighbor?"
+Spec: The program replaces a 3 in array with "Won't you be my neighbor?"
 Input: "4"
 Output: "0, 1, 2, "Won't you be my neighbor?", 4"
 
@@ -38,7 +42,7 @@ Spec: The program returns numbers that start with 2 from list
 Input: "4"
 Output: "2"
 
-Spec: The program replaces a 2 with "Boop!".
+Spec: The program replaces a 2 in array with "Boop!".
 Input: "4"
 Output: "0, 1, "Boop!", "Won't you be my neighbor?", 4"
 
@@ -46,9 +50,11 @@ Spec: The program returns numbers that start with 1 from list
 Input: "4"
 Output: "1"
 
-Spec: The program replaces a 1 with "Beep!"
+Spec: The program replaces a 1 in array with "Beep!"
 Input: "4"
 Output: "0, "Beep!", "Boop!", "Won't you be my neighbor?", 4"
+
+
 
 Spec: Program recognizes hiarirchy of #s 3 > 2 > 1 in larger input array list
 Input: "15"
