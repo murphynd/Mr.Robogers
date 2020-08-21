@@ -26,10 +26,6 @@ Spec: The program returns a range of numbers from 0 to the users inputted number
 Input: "4"
 Output: "0, 1, 2, 3, 4"
 
-Spec: program can recognize indivdial numbers in a lager number input
-Input: 123
-Output: "1","2","3"
-
 Spec: The program returns numbers that start with 3 from list
 Input: "4"
 Output: "3"
@@ -55,10 +51,17 @@ Input: "4"
 Output: "0, "Beep!", "Boop!", "Won't you be my neighbor?", 4"
 
 
+Spec: program can recognize indivdial numbers in a lager number input
+Input: 123
+Output: "1","2","3"
+
+Spec:
 
 Spec: Program recognizes hiarirchy of #s 3 > 2 > 1 in larger input array list
 Input: "15"
-output:"0, "Beep!", "Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,"Beep!","Beep!","Boop!","Won't you be my neighbor?","Beep!","Beep!"
+output:"0, "Beep!", "Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,"Beep!",
+"Beep!"(11),"Boop!"(12),"Won't you be my neighbor?"(13),"Beep!"(14),"Beep!"(15),"Beep!"(16),"Beep!"(17),"Beep!"(18),"Beep!"(19)
+"Boop!"(21),"Boop!"(22),"Won't you be my neighbor?"(23),"Boop!"(24),"Boop!"(25),"Boop!"(26),"Boop!"(27),"Boop!"(28),"Boop!"(29),
 
 ## Setup/Installation Requirements
 
