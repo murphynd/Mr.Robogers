@@ -10,6 +10,7 @@ let index3= list.indexOf(3)
 if (index3 !== -1) {
 list[index3] = "Won't you be my neighbor?";
 }
+
 let index2= list.indexOf(2)
 if (index2 !== -1) {
 list[index2] = "Boop!";
@@ -21,9 +22,15 @@ list[index1] = "Beep!";
 }
 
 //Universal formula//
-let i = list.indexOf(find)
-if (i !== -1) {
-list[i] = replacement;
+function blopModifier(array, find, replacement){
+  let i = array.indexOf(find)
+  if (i !== -1) {
+  list[i] = replacement;
+  }
 }
+
+blopModifier(list,13,"b")
+
+console.log(list)
 
 console.log(list)
