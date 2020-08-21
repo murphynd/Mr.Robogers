@@ -22,31 +22,16 @@ function blopModifier(array, find){
    } else return find;
   }
 
+$(document).ready(function() {
+  ("#input").submit(function(event) {
+    const nameInput = $("#name").val();
+    $(".result").show();
+    $(".page").hide();
 
+  });
+  event.preventDefault();
+});
+ 
 
-  // let index3= list.indexOf(3)
-  // if (index3 !== -1) {
-  // list[index3] = "Won't you be my neighbor?";
-  // }
-  
-  // let index2= list.indexOf(2)
-  // if (index2 !== -1) {
-  // list[index2] = "Boop!";
-  // }
-  
-  // let index1= list.indexOf(1)
-  // if (index1 !== -1) {
-  // list[index1] = "Beep!";
-  // }
-  
-  // //Universal formula//
-  // function blopModifier(array, find, replacement){
-  //   let i = array.indexOf(find)
-  //   if (i !== -1) {
-  //   list[i] = replacement;
-  //   }
-  // }
-  
-  // blopModifier(list,13,"b")
   
   
