@@ -1,10 +1,21 @@
-input = 5;
+input = 15;
 let list=[];
-for (let i = 0; i <= input; i += 1) {
+let xArray = []
+for (let i = 0; i <= input; i ++) {
   list.push(i);
 }
 console.log(list);
+list.forEach(function(i){
 
-for (let i = list.length -1; i = 1; i ++){
-  console.log()
+if (list.includes(3)){
+list.unshift("Won't you be my neighbor?");
 }
+else if(list.includes(2)){
+list.unshift("Boop")
+}
+else if (list.includes(1)){
+list.unshift("beep")
+}
+});
+console.log(xArray)
+console.log(list)
