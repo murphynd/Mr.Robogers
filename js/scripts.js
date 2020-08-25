@@ -1,36 +1,36 @@
 
-
-
-  $(document).ready(function() {
-    $(".btn").click(function() {
-      $(".result").show();
-      $(".jumbotron").hide();
-    });
-  event.preventDefault();
-});
- 
-
-//Function I was working on. 
-//Currently it will make a list out of the input you give it and 
-//with blopModifier you can change 1, 2, or 3 to the phrase in the array 
-//I could not figure out how to make this one loop 
-
-
-let input = 15
-let list=[];
-for (let i = 0; i <= input; i ++) {
-  list.push(i);
-}
-function blopModifier(list, find){
-  let i = list.indexOf(find)
-  if (i == 3) {
-  list[i] = "Won't you be my neighbor?";
-   } else if (i == 2) {
-    list[i] = "Boop!";
-   } else if ( i == 1){
-    list[i] = "Beep!";
-   } else return find;
+function makearray(input) {
+  this.array = []
+  for (let i = 0; i <= input; i ++)  {
+    this.array.push(i);
   }
+}
+function blopModifierlist() {
+  let result = []
+  for(let i = 0; i < this.array.length; i++) {
+    if (i.toString().includes('3')) {
+    result.push("Won't you be my neighbor?");
+    } else if (i.toString().includes('2')){
+    result.push = ("Boop!");
+    } else if (i.toString().includes('1')){
+    result.push = ("Beep!");
+    } else 
+      result.push(i);
+    }
+  return result;
+}
 
+$(document).ready(function() {
+  $(".btn").click(function() {
+    $(".result").show();
+    $(".jumbotron").hide();
+  });
   
-  
+  $("form#input").submit(function(event) {
+    event.preventDefault();
+    let userNumber = makearray(parseInt($("#inputnum").val()));
+    console.log(userNumber);
+    blopModifierlist(userNumber);
+    console.log(userNumber);
+  });
+});
