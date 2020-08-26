@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Mr. Roboger's Neighborhood</title>
-</head>
-<body>
-  <div class="container">
-    <div class ="jumbotron">
-      <h1>Welcome</h1>
-      <img src="imgs/rodgers.jpg" class="img-fluid" alt="mr.Robogers">
-      <h3>This code is not working,</h3> 
-        <h2>but Mr.Robogers cardigan is.</h2>
-      <form id="input" class="col">
-        <div class="form-group">
-          <label for="inputnum">Enter a number</label>
-          <input type="number" class="form-control" id="inputnum"  placeholder="Enter Enter a number">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Mr. Roboger's Neighborhood</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Mr.Robogers</h1>
+      </div>
+      <div class="card border-success col-12">
+        <div class="card-body text-success">
+          <form id="input">
+            <input
+              type="number"
+              class="form-control"
+              id="inputnum"
+              placeholder="Enter Enter a number"
+            />
+            <button type="submit" class="btn btn-outline-dark">
+              Get Wild!
+            </button>
+          </form>
         </div>
-        <button type="submit" class="btn btn-outline-dark">Get Wild!</button>
-      </form>
-      
+      </div>
+      <div class="card border-success col-12">
+        <div class="card-body text-success">
+          <h5 class="card-title">Mr.Robogers says:</h5>
+          <input type="text" class="form-control" id="blop" value="" disabled />
+        </div>
+      </div>
     </div>
-    <div class=result>
-      <h1>Is this imposter syndrome? </h1>
-      <img src="imgs/imposterrodgers.jpg" class="img-fluid" alt="mr.Robogers">
-      <div class =string></div>
-      
-    </div>
-  </div>
-</body>
+  </body>
 </html>
- 
