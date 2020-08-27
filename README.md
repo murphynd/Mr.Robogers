@@ -18,50 +18,40 @@ Create a web application that takes a number from a user and returns a range of 
 7. The number 32 should be replaced with "Won't you be my neighbor?"
 8. A user should be able to enter a new number and see new results over and over again.
 
-
 ## Specs
+
 ```
 [x] Spec: The program returns a range of numbers from 0 to the users inputted number
  Input: "4"
  Output: "0, 1, 2, 3, 4"
-``` 
 ```
-[x] Spec: The program returns numbers that start with 3 from list
- Input: "4"
- Output: "3"
-```
+
 ```
 [x] Spec: The program replaces a 3 in array with "Won't you be my neighbor?"
  Input: "4"
  Output: "0, 1, 2, "Won't you be my neighbor?", 4"
 ```
-```
-[x]Spec: The program returns numbers that start with 2 from list
-Input: "4"
-Output: "2"
-```
+
 ```
 [x]Spec: The program replaces a 2 in array with "Boop!".
 Input: "4"
 Output: "0, 1, "Boop!", "Won't you be my neighbor?", 4"
 ```
+
 ```
-[x]Spec: The program returns numbers that start with 1 from list
-Input: "4"
-Output: "1"
-```
-```
-[]Spec: The program replaces a 1 in array with "Beep!"
+[x]Spec: The program replaces a 1 in array with "Beep!"
 Input: "4"
 Output: "0, "Beep!", "Boop!", "Won't you be my neighbor?", 4"
 ```
+
 ```
-[]Spec: program can recognize indivdial numbers in a lager number input
+[x]Spec: program can recognize indivdial numbers in a lager number input
 Input: 123
 Output: "1","2","3"
 ```
+
 ```
-[]Spec: Program recognizes hiarirchy of #s 3 > 2 > 1 in larger input array list
+[x]Spec: Program recognizes hiarirchy of #s 3 > 2 > 1 in larger input array list
 Input: "15"
 Output:"0, "Beep!", "Boop!", "Won't you be my neighbor?", 4,5,6,7,8,9,"Beep!",
 "Beep!"(11),"Boop!"(12),"Won't you be my neighbor?"(13),"Beep!"(14),"Beep!"(15),"Beep!"(16),"Beep!"(17),"Beep!"(18),"Beep!"(19)
